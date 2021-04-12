@@ -1,0 +1,78 @@
+.tabs {
+	height: 86px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.tabs .image-container .image-icon {
+	display: inline-block;
+}
+
+.tabs :is(.image-container, .image-icon) {
+	width: 45px;
+	height: 45px;
+	border-radius: 500px;
+}
+
+.tabs .image-container {
+	padding: 8px;
+	position: relative;
+	background-color: #EDF3FC;
+	/* overflow: hidden; */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.tabs .image-container .image-icon {
+	margin: 6px;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.tabs .image-container .image-icon:before {
+	top: 2px;
+	left: 0; 
+	right: 0;
+	margin: 0 auto;
+	content: "";
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	border-radius: 500px;
+	border: 3.5px solid #FFFFFF;
+}
+
+.tabs .price-alerts .image-container .image-icon {
+	background-image: url(../img/price_alerts.png)
+}
+
+.tabs .compare .image-container .image-icon {
+	background-image: url(../img/compare.png)
+}
+
+.tabs .converter .image-container .image-icon {
+	background-image: url(../img/converter.png)
+}
+
+.tabs .watchlist .image-container .image-icon {
+	background-image: url(../img/watchlist.png)
+}
+
+.tabs .tab-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.tabs .tab-container span {
+	color: #B4B6BA;
+}
+
+/* Active Effect */
+
+.tabs .tab-container.active span{
+	color: inherit;
+	font-weight: 500;
+}

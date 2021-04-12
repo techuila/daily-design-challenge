@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Cryptocurrency App I Ofspace</title>
+		<link href="/assets/plugins/font-awesome/css/all.css" rel="stylesheet" />
+		<script
+			src="https://code.jquery.com/jquery-3.6.0.min.js"
+			integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			crossorigin="anonymous"
+		></script>
+		<link rel="stylesheet" href="./assets/css/app.css" />
+	</head>
+	<body class="center-all-desktop">
+		<div id="app" class="flex-vertical">
+			<!-- Header Section -->
+			<header></header>
+
+			<!-- Main Content -->
+			<main>
+				<!-- Tabs Seciton -->
+				<section class="tabs text-center">
+					<div class="tab-container price-alerts pointer active">
+						<div class="image-container center-all">
+							<div class="image-icon"></div>
+						</div>
+						<span>Price Alerts</span>
+					</div>
+					<div class="tab-container compare pointer">
+						<div class="image-container center-all">
+							<div class="image-icon"></div>
+						</div>
+						<span>Compare</span>
+					</div>
+					<div class="tab-container converter pointer">
+						<div class="image-container center-all">
+							<div class="image-icon"></div>
+						</div>
+						<span>Converter</span>
+					</div>
+					<div class="tab-container watchlist pointer">
+						<div class="image-container center-all">
+							<div class="image-icon"></div>
+						</div>
+						<span>Watchlist</span>
+					</div>
+				</section>
+
+				<!-- Cards Section -->
+				<section class="card-container">
+					<div class="card-container-header">
+						<h6>Top Movers</h6>
+						<a href="#see-all">See all</a>
+					</div>
+
+					<div class="cards">
+						<div class="card">
+							<div class="image-icon"></div>
+
+							<div class="content">
+								<h6>BTC <span class="current-price">$0.68</span></h6>
+								<h3 class="daily-change">+99.87%</h3>
+							</div>
+						</div>
+						<div class="card">
+							<div class="image-icon"></div>
+
+							<div class="content">
+								<h6>BIN <span class="current-price">$0.68</span></h6>
+								<h3 class="daily-change">+99.87%</h3>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- Gainers Section -->
+				<section class="gainers-container">
+					<div class="gainers-container-header">
+						<h6>Gainers & losers</h6>
+					</div>
+
+					<div class="cards">
+						<div class="card">
+							<div class="image-container center-all">
+								<div class="image-icon"></div>
+							</div>
+							<div class="content">
+								<div class="title-container">
+									<h3 class="title">Bitcoin</h3>
+									<h3 class="gain-price">$6,320.00</h3>
+								</div>
+								<div class="sub-title-container">
+									<h6 class="sub-title">BTC</h6>
+									<div class="gain-percent">+1.68%</div>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="image-container center-all">
+								<div class="image-icon"></div>
+							</div>
+							<div class="content">
+								<div class="title-container">
+									<h3 class="title">Binance</h3>
+									<h3 class="gain-price">$6,320.00</h3>
+								</div>
+								<div class="sub-title-container">
+									<h6 class="sub-title">BIN</h6>
+									<div class="gain-percent">+1.68%</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+
+			<!-- Bottom Navigation -->
+			<footer id="bottom-navigation" class="flex-horizontal">
+				<div class="link active"><i class="fas fa-home"></i></div>
+				<div class="link"><i class="fas fa-chart-pie"></i></div>
+				<div class="link"><i class="fas fa-signal"></i></div>
+				<div class="link"><i class="fas fa-bell"></i></div>
+			</footer>
+		</div>
+
+		<!-- Load JS Files -->
+		<script src="./assets/js/index.js"></script>
+	</body>
+</html>

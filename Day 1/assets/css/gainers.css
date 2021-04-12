@@ -1,0 +1,79 @@
+.gainers-container .gainers-container-header {
+	margin-bottom: 8px;
+}
+
+.gainers-container .cards {
+	display: flex;
+	flex-direction: column;
+}
+
+.gainers-container .cards .card:not(:first-child) {
+	margin-top: 12px;
+}
+
+.gainers-container .cards .card {
+	height: 45px;
+	padding: 12px;
+	border-radius: 12px;
+	border: 1.5px solid #EDF3FC;
+	transition: all 150ms ease-in;
+	background-color: transparent;
+	
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.gainers-container .cards .card .image-icon {
+	width: 42px;
+	height: 42px;
+	border-radius: 500px;
+	background-color: gray;
+}
+
+.gainers-container .cards .card:nth-child(1) .image-icon {
+	background-color: #FEF7F0;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-image: url('/assets/img/bitcoin.png');
+}
+
+.gainers-container .cards .card:nth-child(2) .image-icon {
+	background-color: #EFF5FD;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-image: url('/assets/img/binance.png');
+}
+
+.gainers-container .cards .card .content {
+	flex-grow: 1;
+	margin-left: 12px;
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.gainers-container .cards .card .content :is(.title-container, .sub-title-container) {
+	height: 24px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.gainers-container .cards .card .content .sub-title-container .sub-title{
+	font-weight: 400;
+	color: #A2A2AA;
+}
+
+.gainers-container .cards .card .content .sub-title-container .gain-percent {
+	color: #4FBF79;
+}
+
+/* Hover Effect */
+.gainers-container .cards .card:hover {
+	cursor: pointer;
+	transform: scale(1.01);
+	background-color: #FFFFFF;
+	box-shadow: 0 10px 20px 10px rgb(237, 243, 252, 0.6);
+}

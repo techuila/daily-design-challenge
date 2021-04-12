@@ -1,0 +1,56 @@
+header {
+	height: 35px;
+	padding: 5px;
+	position: relative;
+	margin-bottom: 24px;
+	padding: 24px 14px 0 14px;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+/* Bugrids Start */
+header .bugrids {
+	width: 30px;
+	height: 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+header .bugrids div {
+	height: 2px;
+	border-radius: 100px;
+	background-color: #1B202C;
+}
+
+header .bugrids div:nth-of-type(1) {
+	width: 20px;
+}
+
+header .bugrids div:nth-of-type(2) {
+	width: 25px
+}
+
+header .bugrids div:nth-of-type(3) {
+	width: 15px
+}
+/* Bugrids End */
+
+header h5 {
+	margin: 0;
+	flex-grow: 1;
+	display: inline; 
+	margin-left: 12px;
+}
+
+header .profile-picture {
+	width: 30px;	
+	height: 30px;
+	border-radius: 100%;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url(../img/user.jpg);
+}

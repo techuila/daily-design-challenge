@@ -1,0 +1,114 @@
+@import url(./header.css);
+@import url(./tabs.css);
+@import url(./cards.css);
+@import url(./gainers.css);
+@import url(./bottom_navigation.css);
+
+/* Global */
+
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	color: #1B202C;
+	overflow-y: hidden;
+	font-family: 'Helvetica Neue';
+}
+
+#app {
+	padding: 0;
+	height: 100%;
+	overflow: hidden;
+}
+
+#app main {
+	flex-grow: 1;
+	overflow-x: hidden;
+	overflow-y: overlay;
+	padding: 0 14px 24px 14px;
+}
+
+#app main::-webkit-scrollbar {
+	visibility: hidden;
+}
+
+#app :is(header, main) {
+	background-color: #FDFDFD;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.center-all {
+	display: flex;
+	margin: 0 auto;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.flex-horizontal {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.flex-vertical {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.pointer {
+	cursor: pointer; 
+}
+
+h1,h2,h3,h4,h5,h6 {
+	margin: 0;
+}
+
+h5 {
+	font-size: 16px;
+}
+
+h6 {
+	font-size: 14px;
+}
+
+a {
+	color: #4351D2;
+}
+
+span, p, a {
+	font-size: 12px;
+	text-decoration: none;
+}
+
+section:not(:first-child) {
+	margin-top: 24px;
+}
+
+@media only screen and (min-width: 768px) {
+	body {
+		width: 768px;
+		margin: 0 auto;
+		background: linear-gradient(0deg, #EAEAEA, #E2E2E3);
+	}
+
+	#app {
+		margin: 12px 0;
+		border-radius: 8px;
+		position: relative;
+		background-color: #FFFFFF;
+		box-shadow: 0 10px 20px 5px rgba(141, 162, 190, 0.3);
+	}
+
+	.center-all-desktop {
+		display: flex;
+		margin: 0 auto;
+		align-items: center;
+		flex-direction: column;
+		justify-content: center;
+	}
+}

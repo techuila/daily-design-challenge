@@ -1,0 +1,72 @@
+.card-container .card-container-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	margin-bottom: 8px;
+}
+
+.card-container .card-container-header a {
+	color: #4857D3;
+}
+
+.card-container .cards {
+	display: flex;
+	flex-direction: row;
+}
+
+.card-container .cards .card {
+	width: 120px;
+	height: 130px;
+	display: flex;
+	padding: 12px;
+	border-radius: 12px;
+	flex-direction: column;
+	transition: all 150ms ease-in;
+	justify-content: space-between;
+}
+
+.card-container .cards .card:not(:first-child) {
+	margin-left: 12px;
+}
+
+.card-container .cards .card .image-icon {
+	width: 35px;
+	height: 35px;
+	border-radius: 500px;
+}
+
+.card-container .cards .card:nth-child(1) .image-icon {
+	background: linear-gradient(225deg, #F6CF9F, #E6A873);
+}
+
+.card-container .cards .card:nth-child(2) .image-icon {
+	background: linear-gradient(225deg, #9BC0FA, #6199EC);
+}
+
+.card-container .cards .card:nth-last-of-type(1) {
+	background-color: #EDF3FC;
+}
+
+.card-container .cards .card:nth-last-of-type(2) {
+	background-color: #FEF4EA;
+}
+
+.card-container .cards .card .content {
+	height: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.card-container .cards .card .content .current-price {
+	font-size: 14px;
+	color: #9CA0AC;
+}
+
+/* Hover Effect */
+.card-container .cards .card:hover {
+	cursor: pointer;
+	transform: scale(1.01);
+	box-shadow: 0 10px 20px 10px rgb(237, 243, 252, 0.6);
+}
