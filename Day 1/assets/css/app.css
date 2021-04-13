@@ -100,7 +100,7 @@ section:not(:first-child) {
 	#app {
 		margin: 12px 0;
 		max-height: 750px;
-		border-radius: 8px;
+		border-radius: 34px;
 		position: relative;
 		background-color: #FFFFFF;
 		box-shadow: 0 10px 20px 5px rgba(141, 162, 190, 0.3);
