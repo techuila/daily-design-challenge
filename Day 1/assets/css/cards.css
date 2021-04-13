@@ -20,7 +20,7 @@
 	height: 130px;
 	display: flex;
 	padding: 12px;
-	border-radius: 12px;
+	border-radius: 24px;
 	flex-direction: column;
 	transition: all 150ms ease-in;
 	justify-content: space-between;

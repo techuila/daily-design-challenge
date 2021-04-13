@@ -8,7 +8,15 @@ $(document).ready(() => {
 		// Listen for window resize
 		resizeFn();
 		$(window).resize(resizeFn);
-		$('main').on('scroll', scrollFn);
+		// $('main').on('scroll', scrollFn);
+
+		$('#bottom-navigation .link').on('click', function () {
+			// Remove previous active link
+			$('#bottom-navigation .link.active').removeClass('active');
+
+			// Set clicked link to active
+			$(this).addClass('active');
+		});
 	}
 
 	main();
